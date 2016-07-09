@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_medium"
+    android:elevation="@dimen/margin_medium">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium"
+        android:background="#FFF"
+        >
+        <TextView
+            android:id="@+id/txt_place_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:text="Title"/>
+        <ImageView
+            android:id="@+id/img_city"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/margin_medium"
+            />
+        <TextView
+            android:id="@+id/txt_place_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@android:color/darker_gray"
+            android:text="Descripton"
+            />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
